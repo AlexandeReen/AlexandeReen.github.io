@@ -22,22 +22,68 @@
   font-weight: bold;
   font-style: normal;
 }
-/* Цвета */
-  @btn-color: #f8af01;
-  @text-dark: #292929;
-  @text-light: #ffffff;
-  @attention: #ff0000;
-  @bg-green:  #286b0a;
-  @bg-light: #f5f5f5;
-  @feature-color: #70c849;
-  @icon-color: #44b513;
-  
-  /* Базовые настройки */
-  html{
-    font-size: 10px;
-  }
+.reg(){
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+.bold(){
+  font-family: 'ProximaNova_bold', sans-serif;
+}
 
-  /* Типографика */
-  section{
-    padding: 10rem 0;
+/* Цвета */
+@btn-color: #f8af01;
+@text-dark: #292929;
+@text-light: #ffffff;
+@attention: #ff0000;
+@bg-green: #286b0a;
+@bg-light: #f5f5f5;
+@feature-color: #70c849;
+@icon-color: #44b513;
+
+/* Базовые настройки */
+html {
+  font-size: 10px;
+}
+body{
+  .reg();
+}
+
+.button {
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: @btn-color;
+  color: @text-light;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* Типографика */
+section {
+  padding: 10rem 0;
+}
+
+/* Main section */
+.main {
+  padding: 3rem 0;
+}
+.header{
+  height: 7rem;
+}
+.wrap{
+  display: table;
+  width: 100%;
+  height: 7rem;
+  &-block{
+    display: table-cell;
+    vertical-align: middle;
   }
+}
+.phone-link{
+  display: inline-block;
+  .bold();
+  font-weight: 900;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: @text-dark;
+}
