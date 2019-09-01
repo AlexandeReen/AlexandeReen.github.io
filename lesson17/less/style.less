@@ -1,0 +1,43 @@
+/* Colors */
+@btn-color: #ffb504;
+@icon-color: #358015;
+
+
+/* Basic setting */
+html{
+  font-size: 10px;
+}
+
+
+
+/* Header Style */
+.header{
+  height: 7rem;
+  margin-top: 1.5rem;
+  .row a{
+    display: inline-block;
+    height: 7rem;
+    line-height: 7rem;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .wrap{
+    display: table;
+    height: 7rem;
+    &-block{
+      display: table-cell;
+      vertical-align: middle;
+      .button{
+        background-color: @btn-color;
+        border: none;
+        width: 100%;
+        padding: 1.5rem 2.5rem;
+        border-radius: 8px;
+        border: 1px solid #ffba15;
+        background-image: linear-gradient(to top, #f5ad00 0%, #ffb504 100%);
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
