@@ -12,3 +12,12 @@
   font-weight: bold;
   font-style: normal;
 }
+/* Цвета */
+/* Базовые настройки */
+html {
+  font-size: 10px;
+}
+/* Типографика */
+section {
+  padding: 10rem 0;
+}
