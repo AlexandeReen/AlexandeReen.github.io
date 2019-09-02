@@ -53,6 +53,14 @@ html {
 body {
   .reg();
 }
+a:hover {
+  text-decoration: none;
+}
+button, a, input {
+  &:focus{
+    outline: none;
+  }
+}
 
 /* Оформление всего Header */
 header {
@@ -90,6 +98,11 @@ header {
   background-color: @btn-color;
   border-radius: 0.8rem;
   border: none;
+  transition: all 0.2s;
+  &:hover{
+    cursor: pointer;
+    background-color: darken(@btn-color, 5%);
+  }
 }
 
 /* Блок Main */
