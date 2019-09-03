@@ -53,11 +53,15 @@ html {
 body {
   .reg();
 }
+
 a:hover {
   text-decoration: none;
 }
-button, a, input {
-  &:focus{
+
+button,
+a,
+input {
+  &:focus {
     outline: none;
   }
 }
@@ -99,7 +103,8 @@ header {
   border-radius: 0.8rem;
   border: none;
   transition: all 0.2s;
-  &:hover{
+
+  &:hover {
     cursor: pointer;
     background-color: darken(@btn-color, 5%);
   }
@@ -204,34 +209,104 @@ header {
   }
 }
 
-/* Медиа запросы */
-@media (max-width: 991px){
-  .main{
-    background-position: top right;
+/* Блок с приемуществами */
+.features {
+  margin-bottom: 8rem;
+  text-align: center;
+
+  /* Заголовок */
+  &-header {
+    margin: 7rem 0 8rem;
+    .bold();
+    font-size: 3.6rem;
   }
-  .main-content{
-    text-align: center;
+
+  /* Иконки */
+  &-img {
+    height: 8rem;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
-}
-@media (max-width: 766px){
-  header{
-    text-align: center;
-  }
-  .main{
-    background-position: top left;
-  }
-  .main-content{
-    margin-top: 17rem;
+
+  &-block {
+
+    /* Подзаголовки */
+    h3 {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      .bold();
+      font-size: 2rem;
+    }
+
+    /* Текст */
+    p {
+      padding: 0 5rem;
+      font-size: 1.6rem;
+    }
   }
 }
 
-/* Блок с приемуществами */
-.features{
-  height: 70rem;
-  text-align: center;
-  &-header{
-    margin: 7rem 0 10rem;
-    .bold();
-    font-size: 3.6rem;
+/* Слайдер */
+.slick-active {
+  outline: none;
+}
+
+/* Стрелки слайдера */
+.arrow {
+  top: 50%;
+  transform: translateY(-50);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 3rem;
+  border: none;
+}
+
+.prev {
+  left: 0;
+  background: url('../img/prev.svg') center no-repeat;
+  background-size: 70%;
+}
+
+.next {
+  right: 0;
+  background: url(../img/next.svg) center no-repeat;
+  background-size: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Медиа запросы */
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+
+  .main-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 766px) {
+  header {
+    text-align: center;
+  }
+
+  .main {
+    background-position: top left;
+  }
+
+  .main-content {
+    margin-top: 17rem;
   }
 }
