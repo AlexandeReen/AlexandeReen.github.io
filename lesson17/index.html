@@ -32,7 +32,7 @@
           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
             <div class="wrap">
               <div class="wrap-block">
-                <button class="button" type="submit">получить консультацию</button>
+                <button class="button popup-btn" type="submit">получить консультацию</button>
               </div>
             </div>
           </div>
@@ -122,11 +122,11 @@
 <div class="popup">
   <div class="popup-dialog">
     <div class="popup-content">
+      <button class="popup-close">&times;</button>
       <div class="popup-header">
-          <h1>Заинтересовало?</h1>
-          <p>Оставьте контактные данные<br> для связи</p>
+        <h1>Заинтересовало?</h1>
+        <p>Оставьте контактные данные<br> для связи</p>
       </div>
-      <div class="popup-close"></div>
       <div class="main-form popup-form">
         <form action="#">
           <label for="#">Ваше имя</label>
@@ -151,6 +151,14 @@
   <!-- Инициализация слайдера -->
   <script>
     $(document).ready(function () {
+      $('.popup-btn').on('click', function (event) {
+        event.preventDefault();
+        $('.popup').fadeIn();
+      });
+      $('.popup-close').on('click', function (event) {
+        event.preventDefault();
+        $('.popup').fadeOut();
+      });
       $('.features-slider').slick({
         infinite: true,
         slidesToShow: 4,
