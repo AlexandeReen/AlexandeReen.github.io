@@ -5,3 +5,5 @@
 [Урок#17](https://alexandereen.github.io/lesson17/ "Верстка макета") - Верстка макета ГИПСОЛИТ
 
 [TOO ДемонтажМет](https://alexandereen.github.io/projectDemontazh/ "Верстка макета") - Верстка макета ТОО ДемонтажМет
+
+[Аккордеон](https://alexandereen.github.io/Accordion/ "Верстка макета") - ДЗ Аккордеон (Урок№18)
