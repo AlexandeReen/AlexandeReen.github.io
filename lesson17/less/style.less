@@ -278,6 +278,68 @@ header {
   background: url(../img/next.svg) center no-repeat;
   background-size: 70%;
 }
+/* Оформление блок с услугами и ценами */
+.price{
+  background: @icon-green-dark url(../img/price/price-bg.jpg) center;
+  text-align: center;
+  color: @text-light;
+  &-header{
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+    h1{
+      .bold();
+      font-size: 3.6rem;
+    }
+    p{
+      font-size: 1.6rem;
+    }
+  }
+  &-btn{
+    margin-top: 11rem;
+  }
+  &-block{
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: @bg-light;
+    color: @text-dark;
+    box-shadow: 0 1.4rem 2.1rem rgba(0, 0, 0, 0.17);
+    min-height: 56rem;
+    h4{
+      margin: 2rem;
+      .bold();
+      font-size: 1.6rem;
+    }
+    img{
+      width: 100%;
+      max-width: 40rem;
+    }
+  }
+  &-tag{
+    display: block;
+    margin: 2rem 0;
+    .bold();
+    font-size: 1.9rem;
+  }
+  &-list{
+    min-height: 12rem;
+    padding: 0;
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    li{
+      &::before{
+        content: '';
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: middle;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(../img/price/check.svg) center no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
 
 /* Модальное окно */
 .popup{
@@ -320,14 +382,20 @@ header {
   }
 }
 
-
-
-
-
-
-
-
 /* Медиа запросы */
+@media (max-width: 1199px) {
+  .price{
+    &-block{
+      padding: 2rem;
+    }
+    &-header{
+      margin-bottom: 0;
+    }
+    &-btn{
+      margin: 2rem;
+    }
+  }
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;

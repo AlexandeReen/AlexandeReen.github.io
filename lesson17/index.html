@@ -17,7 +17,6 @@
 
 <body>
   <!-- Главный Блок -->
-  <!-- Главный Блок -->
   <main class="main">
     <div class="container">
       <!-- Структура header -->
@@ -64,6 +63,7 @@
       </div>
     </div>
   </main>
+  <!-- Блок с приемуществами -->
   <section class="features">
     <div class="container">
       <h3 class="features-header">Преимущества работы с нами</h3>
@@ -115,40 +115,98 @@
       </div>
     </div>
   </section>
-
-
+<!-- Разметка блока с ценами -->
+  <section class="price">
+    <div class="container">
+      <!-- Заголовок и кнопка "Рассчитать точую стоимость" -->
+      <div class="row">
+        <div class="col-xl-4 offset-xl-4">
+          <div class="price-header">
+            <h1>Цены</h1>
+            <p>Выберите вариант, который подходит Вам:</p>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <button class="button price-btn" data-toggle="modal">Рассчитать точую стоимость</button>
+        </div>
+      </div><!-- row -->
+      <!-- Блок с услугами и ценами -->
+      <div class="row">
+        <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+          <div class="price-block">
+            <h4>Штукатурка вашим материалом</h4>
+            <img src="img/price/1.jpg" alt="Штукатурка вашим материалом">
+            <span class="price-tag">от 300 руб/м<sup>2</sup></span>
+            <ul class="price-list">
+              <li>Проведение работ</li>
+              <li>Уборка</li>
+            </ul>
+            <button class="button" data-toggle="modal">заказать</button>
+          </div>
+        </div>
+        <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+          <div class="price-block">
+            <h4>Штукатурка под шпаклёвку</h4>
+            <img src="img/price/2.jpg" alt="Штукатурка под шпаклёвку">
+            <span class="price-tag">от 530 руб/м<sup>2</sup></span>
+            <ul class="price-list">
+              <li>Завоз материала и его подъем</li>
+              <li>Проведение работ</li>
+              <li>Уборка</li>
+              <li>Гарантия 2 года</li>
+            </ul>
+            <button class="button" data-toggle="modal">заказать</button>
+          </div>
+        </div>
+        <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+          <div class="price-block">
+            <h4>Штукатурка под обои</h4>
+            <img src="img/price/3.jpg" alt="Штукатурка под обои">
+            <span class="price-tag">от 560 руб/м<sup>2</sup></span>
+            <ul class="price-list">
+              <li>Завоз материала и его подъем</li>
+              <li>Проведение работ</li>
+              <li>Уборка</li>
+              <li>Гарантия 2 года</li>
+              <li>Можно сразу клеить обои</li>
+            </ul>
+            <button class="button" data-toggle="modal">заказать</button>
+          </div>
+        </div>
+      </div><!-- row -->
+    </div>
+  </section>
 
   <!-- Модальные окна -->
-<div class="popup">
-  <div class="popup-dialog">
-    <div class="popup-content">
-      <button class="popup-close">&times;</button>
-      <div class="popup-header">
-        <h1>Заинтересовало?</h1>
-        <p>Оставьте контактные данные<br> для связи</p>
-      </div>
-      <div class="main-form popup-form">
-        <form action="#">
-          <label for="#">Ваше имя</label>
-          <input class="main-form-input" type="text">
-          <label for="#">Номер телефона</label>
-          <input class="main-form-input" type="text">
-          <label for="#">Сообщение</label>
-          <textarea class="main-form-input" rows="5"></textarea>
-          <button class="button main-form-btn" type="submit">Оставьте заявку</button>
-        </form>
+  <div class="popup">
+    <div class="popup-dialog">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <div class="popup-header">
+          <h1>Заинтересовало?</h1>
+          <p>Оставьте контактные данные<br> для связи</p>
+        </div>
+        <div class="main-form popup-form">
+          <form action="#">
+            <label for="#">Ваше имя</label>
+            <input class="main-form-input" type="text">
+            <label for="#">Номер телефона</label>
+            <input class="main-form-input" type="text">
+            <label for="#">Сообщение</label>
+            <textarea class="main-form-input" rows="5"></textarea>
+            <button class="button main-form-btn" type="submit">Оставьте заявку</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
 
   <!-- Подключение Slick Слайдера -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
-  <!-- Инициализация слайдера -->
+  <!-- Инициализация скриптов -->
   <script>
     $(document).ready(function () {
       $('.popup-btn').on('click', function (event) {
