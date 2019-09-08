@@ -6,4 +6,6 @@
 
 [TOO ДемонтажМет](https://alexandereen.github.io/projectDemontazh/ "Верстка макета") - Верстка макета ТОО ДемонтажМет
 
-[Аккордеон](https://alexandereen.github.io/Accordion/ "Верстка макета") - ДЗ Аккордеон (Урок№18)
+[Аккордеон](https://alexandereen.github.io/Accordion/ "Верстка аккордеона") - ДЗ Аккордеон (Урок№18)
+
+[Видеофон](https://alexandereen.github.io/lesson20/ "Верстка видеофона") - ДЗ Видеофон (Урок№20)
