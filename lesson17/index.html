@@ -176,6 +176,100 @@
       </div><!-- row -->
     </div>
   </section>
+  <!-- Структура блока с отзывами -->
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback-header">
+        <h1>Отзывы</h1>
+      </div>
+      <div class="feedback-slider">
+        <div class="feedback-slider_item">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="fotorama" data-nav="thumbs" data-loop="true">
+                <img src="img/feedback/photo/1.jpg" alt="">
+                <img src="img/feedback/photo/2.jpg" alt="">
+                <img src="img/feedback/photo/3.jpg" alt="">
+                <img src="img/feedback/photo/4.jpg" alt="">
+                <img src="img/feedback/photo/5.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+              <p>Площадь: <strong>357 м2</strong></p>
+              <p>Выполнен за: <strong>10 дней</strong></p>
+              <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+              <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+              <div class="media">
+                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                <div class="media-body">
+                  <span>Заказчик</span>
+                  <h5 class="mt-0">Нахимов Артём</h5>
+                </div>
+              </div>
+              <p class="feedback-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал, курсивных вдали правилами языкового свой вершину прямо залетают пояс?</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider_item">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="fotorama" data-nav="thumbs" data-loop="true">
+                <img src="img/feedback/photo/1.jpg" alt="">
+                <img src="img/feedback/photo/2.jpg" alt="">
+                <img src="img/feedback/photo/3.jpg" alt="">
+                <img src="img/feedback/photo/4.jpg" alt="">
+                <img src="img/feedback/photo/5.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-xl-6">
+                <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+                <p>Площадь: <strong>357 м2</strong></p>
+                <p>Выполнен за: <strong>10 дней</strong></p>
+                <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+                <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+              <div class="media">
+                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                <div class="media-body">
+                  <span>Заказчик</span>
+                  <h5 class="mt-0">Нахимов Артём</h5>
+                </div>
+              </div>
+              <p class="feedback-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал, курсивных вдали правилами языкового свой вершину прямо залетают пояс?</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider_item">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="fotorama" data-nav="thumbs" data-loop="true">
+                <img src="img/feedback/photo/1.jpg" alt="">
+                <img src="img/feedback/photo/2.jpg" alt="">
+                <img src="img/feedback/photo/3.jpg" alt="">
+                <img src="img/feedback/photo/4.jpg" alt="">
+                <img src="img/feedback/photo/5.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-xl-6">
+                <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+                <p>Площадь: <strong>357 м2</strong></p>
+                <p>Выполнен за: <strong>10 дней</strong></p>
+                <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+                <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+              <div class="media">
+                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                <div class="media-body">
+                  <span>Заказчик</span>
+                  <h5 class="mt-0">Нахимов Артём</h5>
+                </div>
+              </div>
+              <p class="feedback-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал, курсивных вдали правилами языкового свой вершину прямо залетают пояс?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Модальные окна -->
   <div class="popup">
@@ -205,10 +299,17 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
+  <!-- Fotorama from CDNJS, 19 KB -->
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <!-- Инициализация скриптов -->
   <script>
     $(document).ready(function () {
+      $('.feedback-slider').slick({
+        prevArrow:'<button type="button" class="feedback-slider-btn feedback-slider-btn_prev"><img src="img/feedback/prev.svg"></button>',
+        nextArrow:'<button type="button" class="feedback-slider-btn feedback-slider-btn_next"><img src="img/feedback/next.svg"></button>'
+      });
       $('.popup-btn').on('click', function (event) {
         event.preventDefault();
         $('.popup').fadeIn();
@@ -227,7 +328,7 @@
               slidesToShow: 2,
               slidesToScroll: 2,
               prevArrow: '<button class="prev arrow"></button>',
-              nextArrow: '<button class="next arrow"></button>',
+              nextArrow: '<button class="next arrow"></button>'
             }
           },
           {
@@ -236,7 +337,7 @@
               slidesToShow: 1,
               slidesToScroll: 1,
               prevArrow: '<button class="prev arrow"></button>',
-              nextArrow: '<button class="next arrow"></button>',
+              nextArrow: '<button class="next arrow"></button>'
             }
           }
         ]

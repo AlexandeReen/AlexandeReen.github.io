@@ -351,6 +351,87 @@ header {
     }
   }
 }
+/* Оформление блок с отзывами */
+.feedback{
+  padding: 8rem 0;
+  background: url(../img/feedback/feedback-bg.png) no-repeat center;
+  background-size: cover;
+  /* Отзыв клиента */
+  &-text{
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 1.5em;
+    line-height: 1.8rem;
+    border: 2px solid @icon-green;
+    /* Стрелка отзыва */
+    &::before{
+      content: '';
+      position: absolute;
+      display: block;
+      left: 4rem;
+      top: -2rem;
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid @icon-green;
+      border-bottom: none;
+      border-top-right-radius: 100px;
+      background: @bg-light;
+    }
+  }
+  /* Заголовок */
+  &-header{
+    text-align: center;
+    margin-bottom: 8rem;
+    h1{
+      .bold();
+      font-size: 3.6rem;
+    }
+  }
+  /* Сладер Slick */
+  &-slider{
+    padding: 5rem 6rem;
+    box-shadow: 0 1.2rem 1.8rem rgba(0, 0, 0, 0.11);
+    background-color: @bg-light;
+    /* Стрелки */
+    &-btn{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4rem;
+      height: 5rem;
+      background-color: @icon-green;
+      border: none;
+      img{
+        width: 50%;
+      }
+      &_prev{
+        left: -4rem;
+      }
+      &_next{
+        right: -4rem;
+      }
+    }
+    &_item{
+      p{
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+/* Аватарка клиента */
+.media{
+  &-body{
+    span{
+      font-size: 1.4rem;
+    }
+    h5{
+      font-size: 1.6rem;
+      .bold();
+    }
+  }
+}
 
 /* Модальное окно */
 .popup {
