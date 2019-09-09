@@ -9,3 +9,5 @@
 [Аккордеон](https://alexandereen.github.io/Accordion/ "Верстка аккордеона") - ДЗ Аккордеон (Урок№18)
 
 [Видеофон](https://alexandereen.github.io/lesson20/ "Верстка видеофона") - ДЗ Видеофон (Урок№20)
+
+[Amazon-K](https://alexandereen.github.io/amazon-k_flexPractice/ "Верстка на Flex") -  Костыли (Практика Flex)
