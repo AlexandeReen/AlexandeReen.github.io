@@ -22,6 +22,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 /* Миксины */
 .reg() {
   font-family: 'ProximaNova_Rg', sans-serif;
@@ -30,12 +31,13 @@
 .bold() {
   font-family: 'ProximaNova_Bold', sans-serif;
 }
+
 /* Базовые настройки */
 html {
   font-size: 10px;
 }
 
-body{
+body {
   height: 100%;
   background: url(../img/bg-img.jpg) center no-repeat;
   background-size: cover;
@@ -44,33 +46,38 @@ body{
 }
 
 /* Оформление Шапки */
-header{
+header {
   height: 9rem;
   margin-top: 2rem;
-  .phone{
-    i{
+
+  .phone {
+    i {
       height: 9rem;
       margin-right: 1rem;
       line-height: 9rem;
     }
-    a{
+
+    a {
       height: 9rem;
       line-height: 9rem;
       font-size: 2.5rem;
       color: black;
       .bold();
       margin-right: 1rem;
-      &:hover{
+
+      &:hover {
         text-decoration: none;
       }
     }
   }
 }
+
 /* Оформление основного контента */
-main{
+main {
   margin-top: 10rem;
+
   /* Заголовок */
-  h1{
+  h1 {
     display: block;
     padding: 2rem;
     background-color: #000;
@@ -80,21 +87,25 @@ main{
     color: #fff;
   }
 }
-.services{
+
+.services {
   margin-top: 5rem;
   margin-bottom: 10rem;
   padding: 5rem;
-  background-color: rgba(255, 255, 255, 1);// Здесь можно поправить прозрачность фона
-  p{
+  background-color: rgba(255, 255, 255, 1); // Здесь можно поправить прозрачность фона
+
+  p {
     display: block;
-    font-size: 2rem; 
+    font-size: 2rem;
   }
-  &-list{
+
+  &-list {
     display: inline-block;
     .bold();
     font-size: 1.8rem;
   }
-  &-price{
+
+  &-price {
     position: absolute;
     display: inline-block;
     right: 0;
@@ -102,7 +113,8 @@ main{
     background: #000;
     color: #ffffff;
     text-align: center;
-    p{
+
+    p {
       font-size: 3rem;
       text-transform: uppercase;
     }
@@ -111,35 +123,43 @@ main{
 
 
 @media screen and (max-width: 1199px) {
-  body{
+  body {
     background-position: top left;
   }
 }
+
 @media screen and (max-width: 991px) {
-  header{
+  header {
     text-align: center;
   }
-  h1{
+
+  h1 {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 767px) {
-  body{
+  body {
     background-position: top right;
   }
-  .services-price{
+
+  .services-price {
     padding: 1.5rem 2rem;
-    P{
+
+    P {
       font-size: 2rem;
     }
   }
-  .services-list{
-      padding: 1.5rem;
-    }
-  h1{
+
+  .services-list {
+    padding: 1.5rem;
+  }
+
+  h1 {
     text-align: center;
   }
-  main{
+
+  main {
     margin-top: 20rem;
   }
 }
