@@ -2,7 +2,7 @@
 
 [Урок#9](https://alexandereen.github.io/lesson9/ "Верстка макета при помощи Bootstrap 4") - Верстка макета при помощи Bootstrap 4 - Готово 
 
-[Урок#17](https://alexandereen.github.io/lesson17/ "Верстка макета") - Верстка макета ГИПСОЛИТ - в процессе обучения
+[Урок#17](https://alexandereen.github.io/lesson17/ "Верстка макета") - Верстка макета ГИПСОЛИТ - в процессе 
 
 [TOO ДемонтажМет](https://alexandereen.github.io/projectDemontazh/ "Верстка макета") - Верстка макета ТОО ДемонтажМет
 
