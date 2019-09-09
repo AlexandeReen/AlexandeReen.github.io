@@ -1,16 +1,18 @@
-.section{
+.section {
   min-height: 100vh;
   text-align: center;
   width: 100%;
   display: table;
 }
-.wrap-block{
+
+.wrap-block {
   position: absolute;
   display: table-cell;
   right: 0;
   bottom: 0;
 }
-h1{
+
+h1 {
   font-size: 4rem;
   color: #ffffff;
 }
