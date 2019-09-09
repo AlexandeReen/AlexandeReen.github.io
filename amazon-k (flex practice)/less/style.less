@@ -43,6 +43,7 @@ html {
 
   body {
     .reg;
+
     h2 {
       .eb();
       font-size: 2.4rem;
@@ -79,8 +80,17 @@ html {
     }
 
     button:active,
-    button:focus {
+    button:focus,
+    input,
+    textarea {
       outline: none;
+    }
+
+    input,
+    textarea {
+      box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+      border-radius: 5px;
+      border: none;
     }
   }
 }
@@ -152,63 +162,131 @@ html {
     box-shadow: 0px 10px 25px rgba(255, 108, 108, 0.5);
   }
 }
+
 /* Оформление секции Каталога */
 .catalog {
   padding: 10rem 0;
+
   &-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  &-card{
+
+  &-card {
     padding: 3rem;
     text-align: center;
     flex-basis: 30%;
     background-color: @bg-grey;
     margin-bottom: 3rem;
-    button{
+    box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.1);
+    border-radius: 5px;
+
+    button {
       width: 100%;
     }
   }
-  &-text{
+
+  &-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h3{
+
+    h3 {
       flex-basis: 70%;
       text-align: left;
       .eb;
       font-size: 1.6rem;
       line-height: 2.4rem;
     }
-    strong{
+
+    strong {
       text-align: right;
       .eb;
       font-size: 5.3rem;
     }
   }
 }
+
 /* Оформление секции Отзывы */
-.feedback{
+.feedback {
   margin-bottom: 10rem;
-  &-cards{
+
+  &-cards {
     display: flex;
     justify-content: space-between;
   }
-  &-card{
+
+  &-card {
     padding: 2rem 3rem;
     box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
     border: 1px solid #EDEDED;
     border-radius: 10px;
     flex-basis: 23%;
-    h4{
+
+    h4 {
       margin: 1.5rem 0;
       .eb;
       font-size: 1.4rem;
     }
-    p{
+
+    p {
       font-size: 1.4rem;
       line-height: 2.1rem;
+    }
+  }
+}
+
+/* Оформление секции Контакты */
+.contacts {
+  background-color: @bg-grey;
+  padding: 10rem 0;
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    form {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      flex-basis: 50%;
+
+      textarea {
+        padding: 2.5rem 3rem;
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      button {
+        padding: 1.5rem 5.5rem;
+        margin-right: 4rem;
+        .reg();
+        font-size: 1.8rem;
+      }
+
+      a {
+        margin-right: 2.2rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .map {
+      flex-basis: 48%;
+    }
+  }
+
+  &-inputs {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      padding: 2.5rem 3rem;
+      margin-bottom: 3rem;
+      width: 47%;
     }
   }
 }
