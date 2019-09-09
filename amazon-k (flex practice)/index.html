@@ -18,26 +18,110 @@
   <section class="main">
     <div class="container">
       <!-- Структура Header-a -->
-        <header class="main-header">
-          <div class="logo">Амазонка</div>
-          <nav>
-            <ul class="main-nav">
-              <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="#">Категории</a></li>
-              <li class="main-nav__item"><a href="#">Отзывы</a></li>
-              <li class="main-nav__item"><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="phone"><a href="tel:+78002503020">8 800 250 30 20</a></div>
-        </header>
-        <!-- Структура Контента -->
-        <div class="main-content">
-          <div class="main-content-text">
-            <h1>Лучшие костыли для вашего кода</h1>
-            <p>Не придумывайте велосипед, мы за вас сделали костыли — используйте их, это почти бесплатно</p>
-            <button type="button"  class="main-btn button ">Выбрать костыль</button>
+      <header class="main-header">
+        <div class="logo">Амазонка</div>
+        <nav>
+          <ul class="main-nav">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Категории</a></li>
+            <li class="main-nav__item"><a href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="phone"><a href="tel:+78002503020">8 800 250 30 20</a></div>
+      </header>
+      <!-- Структура Контента -->
+      <div class="main-content">
+        <div class="main-content-text">
+          <h1>Лучшие костыли для вашего кода</h1>
+          <p>Не придумывайте велосипед, мы за вас сделали костыли — используйте их, это почти бесплатно</p>
+          <button type="button" class="main-btn button ">Выбрать костыль</button>
+        </div>
+        <img src="img/main-img.png" alt="Костыли">
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Секция Каталог -->
+  <section class="catalog">
+    <div class="container">
+      <h2>Каталог товаров</h2>
+      <div class="catalog-cards">
+        <div class="catalog-card">
+          <img src="img/catalog/1.png" alt="Костыль">
+          <div class="catalog-text">
+            <h3>Свой собственный слайдер на чистом JS</h3>
+            <strong>590.</strong>
           </div>
-          <img src="img/main-img.png" alt="Костыли">
+          <button>Купить костыль</button>
+        </div>
+        <div class="catalog-card">
+          <img src="img/catalog/2.png" alt="Костыль">
+          <div class="catalog-text">
+            <h3>Всплывающее окно без использования JS</h3>
+            <strong>390.</strong>
+          </div>
+          <button>Купить костыль</button>
+        </div>
+        <div class="catalog-card">
+          <img src="img/catalog/3.png" alt="Костыль">
+          <div class="catalog-text">
+            <h3>Табы, меню и аккордеон на чистом CSS с тостера</h3>
+            <strong>690.</strong>
+          </div>
+          <button>Купить костыль</button>
+        </div>
+        <div class="catalog-card">
+          <img src="img/catalog/4.png" alt="Костыль">
+          <div class="catalog-text">
+            <h3>Галерея во всплывающем окне на трех библиотеках</h3>
+            <strong>590.</strong>
+          </div>
+          <button>Купить костыль</button>
+        </div>
+        <div class="catalog-card">
+          <img src="img/catalog/5.png" alt="Костыль">
+          <div class="catalog-text">
+            <h3>Скрипт отправки данных на email со stackoverflow</h3>
+            <strong>590.</strong>
+          </div>
+          <button>Купить костыль</button>
+        </div>
+        <div class="catalog-card">
+          <img src="img/catalog/6.png" alt="Костыль">
+          <div class="catalog-text">
+            <h3>Ванильный тултип перекрывающий контент</h3>
+            <strong>590.</strong>
+          </div>
+          <button>Купить костыль</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Секция отзывы -->
+  <section class="feedback">
+    <div class="container">
+      <h2>Отзывы клиентов</h2>
+      <div class="feedback-cards">
+        <div class="feedback-card">
+          <img src="img/feedback/1.png" alt="Клиент">
+          <h4>Юля, 24 года</h4>
+          <p>Очень удобно пользоваться готовыми костылями и не искать их по сети, спасибо!</p>
+        </div>
+        <div class="feedback-card">
+          <img src="img/feedback/2.png" alt="Клиент">
+          <h4>Егор, 16 лет</h4>
+          <p>Спасибо за костыли,  не пришлось придумывать велосипед, сэкономил время!</p>
+        </div>
+        <div class="feedback-card">
+          <img src="img/feedback/3.png" alt="Клиент">
+          <h4>Рами, 20 лет</h4>
+          <p>Скачал костыль, установил в проект, вылез конфликт с другими костылями!</p>
+        </div>
+        <div class="feedback-card">
+          <img src="img/feedback/4.png" alt="Клиент">
+          <h4>Олег, 32 года</h4>
+          <p>Всё интересно, но не понятно, хотел купить, но ничего не понял, спасибо</p>
         </div>
       </div>
     </div>
@@ -52,7 +136,6 @@
 
 
 
-  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
