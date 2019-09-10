@@ -115,68 +115,72 @@
       </div>
     </div>
   </section>
-  <!-- Разметка блока с ценами -->
+  <!-- Блок с ценами -->
   <section class="price">
     <div class="container">
-      <!-- Заголовок и кнопка "Рассчитать точую стоимость" -->
-      <div class="row">
-        <div class="col-xl-4 offset-xl-4">
-          <div class="price-header">
-            <h1>Цены</h1>
-            <p>Выберите вариант, который подходит Вам:</p>
+      <div class="price-main">
+        <!-- Загловок -->
+        <div class="row">
+          <div class="col-xl-4 offset-xl-4 col-12">
+            <div class="price-header features-header__light">
+              <h1>Цены</h1>
+              <p>Выберите вариант, который подходит Вам:</p>
+            </div>
           </div>
-        </div>
-        <div class="col-xl-4">
-          <button class="button price-btn" data-toggle="modal">Рассчитать точую стоимость</button>
-        </div>
-      </div><!-- row -->
-      <!-- Блок с услугами и ценами -->
-      <div class="row">
-        <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
-          <div class="price-block">
-            <h4>Штукатурка вашим материалом</h4>
-            <img src="img/price/1.jpg" alt="Штукатурка вашим материалом">
-            <span class="price-tag">от 300 руб/м<sup>2</sup></span>
-            <ul class="price-list">
-              <li>Проведение работ</li>
-              <li>Уборка</li>
-            </ul>
-            <button class="button" data-toggle="modal">заказать</button>
+          <div class="col-xl-4 col-12">
+            <div class="price-btn">
+              <button class="button">Рассчитать точую стоимость</button>
+            </div>
           </div>
-        </div>
-        <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
-          <div class="price-block">
-            <h4>Штукатурка под шпаклёвку</h4>
-            <img src="img/price/2.jpg" alt="Штукатурка под шпаклёвку">
-            <span class="price-tag">от 530 руб/м<sup>2</sup></span>
-            <ul class="price-list">
-              <li>Завоз материала и его подъем</li>
-              <li>Проведение работ</li>
-              <li>Уборка</li>
-              <li>Гарантия 2 года</li>
-            </ul>
-            <button class="button" data-toggle="modal">заказать</button>
+        </div> <!-- row -->
+        <!-- Блоки с услугами -->
+        <div class="row">
+          <div class="col-xl-4 offset-xl-0 offet-lg-0 col-md-8 offset-md-2">
+            <div class="price-block">
+              <h4>Штукатурка вашим материалом</h4>
+              <img src="img/price/1.jpg" alt="Штукатурка вашим материалом">
+              <span class="price-tag">от <strong class="price-tag__big">300</strong> руб/м<sup>2</sup></span>
+              <ul class="price-list">
+                <li>Проведение работ</li>
+                <li>Уборка</li>
+              </ul>
+              <button class="button price-btn__form">Заказать</button>
+            </div>
           </div>
-        </div>
-        <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
-          <div class="price-block">
-            <h4>Штукатурка под обои</h4>
-            <img src="img/price/3.jpg" alt="Штукатурка под обои">
-            <span class="price-tag">от 560 руб/м<sup>2</sup></span>
-            <ul class="price-list">
-              <li>Завоз материала и его подъем</li>
-              <li>Проведение работ</li>
-              <li>Уборка</li>
-              <li>Гарантия 2 года</li>
-              <li>Можно сразу клеить обои</li>
-            </ul>
-            <button class="button" data-toggle="modal">заказать</button>
+          <div class="col-xl-4 offset-xl-0 offet-lg-0 col-md-8 offset-md-2">
+            <div class="price-block">
+              <h4>Штукатурка под шпаклёвку</h4>
+              <img src="img/price/2.jpg" alt="">
+              <span class="price-tag">от <strong class="price-tag__big">530</strong> руб/м<sup>2</sup></span>
+              <ul class="price-list">
+                <li>Завоз материала и его подъём</li>
+                <li>Проведение работ</li>
+                <li>Уборка</li>
+                <li>Гарантия 2 года</li>
+              </ul>
+              <button class="button price-btn__form">Заказать</button>
+            </div>
           </div>
-        </div>
-      </div><!-- row -->
+          <div class="col-xl-4 offset-xl-0 offet-lg-0 col-md-8 offset-md-2">
+            <div class="price-block">
+              <h4>Штукатурка под обои</h4>
+              <img src="img/price/3.jpg" alt="Штукатурка под обои">
+              <span class="price-tag">от <strong class="price-tag__big">560</strong> руб/м<sup>2</sup></span>
+              <ul class="price-list">
+                <li>Завоз материала и его подъём</li>
+                <li>Проведение работ</li>
+                <li>Уборка</li>
+                <li>Гарантия 2 года</li>
+                <li>Можно сразу клеить обои</li>
+              </ul>
+              <button class="button price-btn__form">Заказать</button>
+            </div>
+          </div>
+        </div><!-- row -->
+      </div>
     </div>
   </section>
-  <!-- Структура блока с отзывами -->
+  <!-- Стркутура блока с отзывами -->
   <section class="feedback">
     <div class="container">
       <div class="feedback-header">
@@ -186,87 +190,113 @@
         <div class="feedback-slider_item">
           <div class="row">
             <div class="col-xl-6">
-              <div class="fotorama" data-nav="thumbs" data-loop="true">
-                <img src="img/feedback/photo/1.jpg" alt="">
-                <img src="img/feedback/photo/2.jpg" alt="">
-                <img src="img/feedback/photo/3.jpg" alt="">
-                <img src="img/feedback/photo/4.jpg" alt="">
-                <img src="img/feedback/photo/5.jpg" alt="">
+              <div class="fotorama" data-width="100%" data-loop="true" data-nav="thumbs">
+                <img src="img/feedback/photo/1.jpg" alt="заказчик">
+                <img src="img/feedback/photo/2.jpg" alt="заказчик">
+                <img src="img/feedback/photo/3.jpg" alt="заказчик">
+                <img src="img/feedback/photo/4.jpg" alt="заказчик">
+                <img src="img/feedback/photo/5.jpg" alt="заказчик">
               </div>
             </div>
             <div class="col-xl-6">
               <p>Объект: г.Москва, Нахимовский проспект д.10</p>
-              <p>Площадь: <strong>357 м2</strong></p>
+              <p>Площадь: <strong>357 м</strong></p>
               <p>Выполнен за: <strong>10 дней</strong></p>
               <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
               <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
               <div class="media">
-                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                <img src="img/feedback/avatar.png" class="mr-3" alt="заказчик">
                 <div class="media-body">
                   <span>Заказчик</span>
                   <h5 class="mt-0">Нахимов Артём</h5>
                 </div>
               </div>
-              <p class="feedback-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал, курсивных вдали правилами языкового свой вершину прямо залетают пояс?</p>
+              <p class="feedback-message">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                тексты. Ему повстречался до ты над?</p>
             </div>
-          </div>
+          </div><!-- row -->
         </div>
         <div class="feedback-slider_item">
           <div class="row">
             <div class="col-xl-6">
-              <div class="fotorama" data-nav="thumbs" data-loop="true">
-                <img src="img/feedback/photo/1.jpg" alt="">
-                <img src="img/feedback/photo/2.jpg" alt="">
-                <img src="img/feedback/photo/3.jpg" alt="">
-                <img src="img/feedback/photo/4.jpg" alt="">
-                <img src="img/feedback/photo/5.jpg" alt="">
+              <div class="fotorama" data-width="100%" data-loop="true" data-nav="thumbs">
+                <img src="img/feedback/photo/1.jpg" alt="заказчик">
+                <img src="img/feedback/photo/2.jpg" alt="заказчик">
+                <img src="img/feedback/photo/3.jpg" alt="заказчик">
+                <img src="img/feedback/photo/4.jpg" alt="заказчик">
+                <img src="img/feedback/photo/5.jpg" alt="заказчик">
               </div>
             </div>
             <div class="col-xl-6">
-                <p>Объект: г.Москва, Нахимовский проспект д.10</p>
-                <p>Площадь: <strong>357 м2</strong></p>
-                <p>Выполнен за: <strong>10 дней</strong></p>
-                <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
-                <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+              <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+              <p>Площадь: <strong>357 м</strong></p>
+              <p>Выполнен за: <strong>10 дней</strong></p>
+              <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+              <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
               <div class="media">
-                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                <img src="img/feedback/avatar.png" class="mr-3" alt="заказчик">
                 <div class="media-body">
                   <span>Заказчик</span>
                   <h5 class="mt-0">Нахимов Артём</h5>
                 </div>
               </div>
-              <p class="feedback-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал, курсивных вдали правилами языкового свой вершину прямо залетают пояс?</p>
+              <p class="feedback-message">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                тексты. Ему повстречался до ты над?</p>
             </div>
-          </div>
+          </div><!-- row -->
         </div>
         <div class="feedback-slider_item">
           <div class="row">
             <div class="col-xl-6">
-              <div class="fotorama" data-nav="thumbs" data-loop="true">
-                <img src="img/feedback/photo/1.jpg" alt="">
-                <img src="img/feedback/photo/2.jpg" alt="">
-                <img src="img/feedback/photo/3.jpg" alt="">
-                <img src="img/feedback/photo/4.jpg" alt="">
-                <img src="img/feedback/photo/5.jpg" alt="">
+              <div class="fotorama" data-width="100%" data-loop="true" data-nav="thumbs">
+                <img src="img/feedback/photo/1.jpg" alt="заказчик">
+                <img src="img/feedback/photo/2.jpg" alt="заказчик">
+                <img src="img/feedback/photo/3.jpg" alt="заказчик">
+                <img src="img/feedback/photo/4.jpg" alt="заказчик">
+                <img src="img/feedback/photo/5.jpg" alt="заказчик">
               </div>
             </div>
             <div class="col-xl-6">
-                <p>Объект: г.Москва, Нахимовский проспект д.10</p>
-                <p>Площадь: <strong>357 м2</strong></p>
-                <p>Выполнен за: <strong>10 дней</strong></p>
-                <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
-                <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+              <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+              <p>Площадь: <strong>357 м</strong></p>
+              <p>Выполнен за: <strong>10 дней</strong></p>
+              <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+              <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
               <div class="media">
-                <img src="img/feedback/avatar.png" class="mr-3" alt="Заказчик">
+                <img src="img/feedback/avatar.png" class="mr-3" alt="заказчик">
                 <div class="media-body">
                   <span>Заказчик</span>
                   <h5 class="mt-0">Нахимов Артём</h5>
                 </div>
               </div>
-              <p class="feedback-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал, курсивных вдали правилами языкового свой вершину прямо залетают пояс?</p>
+              <p class="feedback-message">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                тексты. Ему повстречался до ты над?</p>
+            </div>
+          </div><!-- row -->
+        </div>
+      </div>
+      <div class="feedback-form">
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <div class="main-form">
+              <h2 class="main-form-title">Хотите так же? Оставьте Ваши контактные данные</h2>
+              <form action="#">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <label for="#">Ваше имя</label>
+                    <input class="main-form-input" type="text">
+                  </div>
+                  <div class="col-xl-6">
+                    <label for="#">Номер телефона</label>
+                    <input class="main-form-input" type="text">
+                  </div>
+                </div>
+                <button class="button main-form-btn" type="submit">Оставьте заявку</button>
+              </form>
+              <img class="hand" src="img/feedback/hand.png" alt="hand">
             </div>
           </div>
-        </div>
+        </div><!-- row -->
       </div>
     </div>
   </section>
@@ -295,20 +325,20 @@
     </div>
   </div>
 
+
   <!-- Подключение Slick Слайдера -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <!-- Fotorama from CDNJS, 19 KB -->
-  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
   <!-- Инициализация скриптов -->
   <script>
     $(document).ready(function () {
       $('.feedback-slider').slick({
-        prevArrow:'<button type="button" class="feedback-slider-btn feedback-slider-btn_prev"><img src="img/feedback/prev.svg"></button>',
-        nextArrow:'<button type="button" class="feedback-slider-btn feedback-slider-btn_next"><img src="img/feedback/next.svg"></button>'
+        prevArrow: '<button type="button" class="feedback-slider-btn feedback-slider-btn_prev"></button>',
+        nextArrow: '<button type="button" class="feedback-slider-btn feedback-slider-btn_next"></button>'
       });
       $('.popup-btn').on('click', function (event) {
         event.preventDefault();
@@ -328,7 +358,7 @@
               slidesToShow: 2,
               slidesToScroll: 2,
               prevArrow: '<button class="prev arrow"></button>',
-              nextArrow: '<button class="next arrow"></button>'
+              nextArrow: '<button class="next arrow"></button>',
             }
           },
           {
@@ -337,7 +367,7 @@
               slidesToShow: 1,
               slidesToScroll: 1,
               prevArrow: '<button class="prev arrow"></button>',
-              nextArrow: '<button class="next arrow"></button>'
+              nextArrow: '<button class="next arrow"></button>',
             }
           }
         ]
