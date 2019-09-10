@@ -360,3 +360,43 @@ html {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .main{
+    &-header{
+      flex-direction: column;
+      height: 100px;
+      margin-bottom: 5rem;
+    }
+    &-content{
+      text-align: center;
+      p{
+        width: 100%;
+      }
+    }
+  }
+  .catalog{
+    &-cards{
+      text-align: center;
+      justify-content: center;
+    }
+    &-card{
+      flex-basis: 80%;
+    }
+  }
+  .contacts{
+    .container{
+      padding: 0;
+    }
+    &-info{
+      text-align: center;
+      button{
+        display: block;
+        width: 80%;
+        margin-left: 50%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
