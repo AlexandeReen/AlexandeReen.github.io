@@ -43,6 +43,7 @@
 @attention: #ff0000;
 @text-dark: #242424;
 @text-light: #ffffff;
+@fear-color: #e8e8e8;
 
 /* Базовые настройки */
 
@@ -509,8 +510,9 @@ header {
 .all-inc {
   padding-top: 10rem;
   background: @bg-grey;
-  .section-header{
-    h2{
+
+  .section-header {
+    h2 {
       color: @icon-green-dark;
     }
   }
@@ -550,6 +552,80 @@ header {
     p {
       font-size: 1.2rem;
     }
+  }
+}
+
+/* Мы развеем все опасения */
+.fears {
+  position: relative;
+  padding: 8rem 0;
+
+  .list {
+    padding: 5rem;
+    margin-bottom: 2rem;
+
+    h3 {
+      margin-bottom: 3rem;
+      .bold();
+      font-size: 2.1rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      min-height: 23rem;
+      list-style: none;
+      font-size: 1.4rem;
+
+      li {
+        position: relative;
+        padding-left: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    &-problems {
+      border: 0.4rem solid #e8e8e8;
+
+      h3 {
+        opacity: .5;
+      }
+
+      li::before {
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: middle;
+        background: url(../img/fears/cancel.png) no-repeat center;
+      }
+    }
+
+    &-solutions {
+      border: 0.4rem solid #358015;
+
+      li::before {
+
+        vertical-align: middle;
+        background: url(../img/fears/cheked.png) no-repeat center;
+      }
+    }
+  }
+
+  .woman {
+    position: absolute;
+    height: 50rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-61%);
   }
 }
 
@@ -613,6 +689,18 @@ header {
 
   .fotorama {
     margin-bottom: 2rem;
+  }
+
+  .fears {
+    .list {
+      ul {
+        min-height: auto;
+      }
+    }
+
+    .woman {
+      display: none;
+    }
   }
 }
 
