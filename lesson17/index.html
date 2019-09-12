@@ -480,38 +480,50 @@
         <h2>Материалы</h2>
         <p>Мы работаем только качественными, проверенными временем материалами, следующих производителей:</p>
       </div>
-      <div class="materials-block">
-        <div class="row">
-          <div class="col-xl-3">
-            <img src="img/materials/1.png" alt="Knauf">
-            <h4>Knauf</h4>
-            <p>МП-75 <strong>245</strong> руб/меш</p>
-            <a href="#">Сертификат</a>
+      <div class="materials-slider">
+        <div class="materials-block">
+          <div class="materials-img">
+            <picture>
+              <img src="img/materials/1.png" alt="Knauf">
+            </picture>
           </div>
-          <div class="col-xl-3">
-            <img src="img/materials/2.png" alt="Volma">
-            <h4>Volma</h4>
-            <p>Аква слой <strong>245</strong> руб/меш</p>
-            <p>Гипс актив <strong>245</strong> руб/меш</p>
-            <a href="#">Сертификат</a>
+          <h3>Knauf</h3>
+          <p>МП-75 <strong>245</strong> руб/меш</p>
+          <a href="№">Сертификат</a>
+        </div>
+        <div class="materials-block">
+          <div class="materials-img">
+            <picture>
+              <img src="img/materials/2.png" alt="Volma">
+            </picture>
           </div>
-          <div class="col-xl-3">
-            <img src="img/materials/3.png" alt="Forman">
-            <h4>Forman</h4>
-            <p>Аква слой <strong>245</strong> руб/меш</p>
-            <p>Гипс актив <strong>245</strong> руб/меш</p>
-            <a href="#">Сертификат</a>
+          <h3>Volma</h3>
+          <p>Аква слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+          <a href="№">Сертификат</a>
+        </div>
+        <div class="materials-block">
+          <div class="materials-img">
+            <picture>
+              <img src="img/materials/3.png" alt="Forman">
+            </picture>
           </div>
-          <div class="col-xl-3">
-            <img src="img/materials/4.png" alt="Ceresit">
-            <h4>Ceresit</h4>
-            <p>Аква слой <strong>245</strong> руб/меш</p>
-            <p>Гипс актив <strong>245</strong> руб/меш</p>
-            <a href="">Сертификат</a>
+          <h3>Forman</h3>
+          <p>Аква слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+          <a href="№">Сертификат</a>
+        </div>
+        <div class="materials-block">
+          <div class="materials-img">
+            <picture>
+              <img src="img/materials/4.png" alt="Ceresit">
+            </picture>
           </div>
+          <h3>Ceresit</h3>
+          <p>Аква слой <strong>245</strong> руб/меш<br>Гипс актив <strong>245</strong> руб/меш</p>
+          <a href="№">Сертификат</a>
         </div>
       </div>
-      <p>Вы можете приобрести материалы по оптовым ценам на сайте <a href="#">gicema.ru</a> или по телефону <strong>+7 495 790 69 90</strong></p>
+      <p>Вы можете приобрести материалы по оптовым ценам на сайте <a href="#">gicema.ru</a> или по телефону <strong><a
+            href="tel:+"></a>+7 495 790 69 90</a></strong></p>
     </div>
   </section>
   <!-- Модальные окна -->
@@ -563,6 +575,30 @@
         $('.popup').fadeOut();
       });
       $('.features-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              prevArrow: '<button class="prev arrow"></button>',
+              nextArrow: '<button class="next arrow"></button>',
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              prevArrow: '<button class="prev arrow"></button>',
+              nextArrow: '<button class="next arrow"></button>',
+            }
+          }
+        ]
+      });
+      $('.materials-slider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
