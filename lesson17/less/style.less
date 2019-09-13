@@ -39,7 +39,6 @@
 @btn-color: #fcb303;
 @icon-green: #70c849;
 @icon-green-dark: #368e10;
-@icon-green-dark: #368e10;
 @attention: #ff0000;
 @text-dark: #242424;
 @text-light: #ffffff;
@@ -687,14 +686,36 @@ header {
       text-decoration: underline;
     }
 
-    strong,
-      {
+    strong{
       color: #000000;
 
       a:hover {
         text-decoration: none;
       }
     }
+  }
+}
+// Посмотрите как мы работаем
+.visit{
+  background: url(../img/Слой_31.webp) center center no-repeat;
+  background-size: cover;
+  &-header{
+    margin: 0;
+    padding: 10rem 0;
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 2rem;
+    }
+  }
+  &-btn{
+    .reg();
+    font-size: 1.4rem;
+  }
+  &-title{
+    .bold();
+    font-size: 1.8rem;
   }
 }
 
@@ -771,6 +792,9 @@ header {
       display: none;
     }
   }
+  .visit{
+    background-position: top right;
+  }
 }
 
 @media (max-width: 991px) {
@@ -786,6 +810,15 @@ header {
     text-align: center;
     background: none;
   }
+  .visit{
+    &-form{
+      padding: 2rem;
+      margin-top: 5rem;
+    }
+    &-header{
+      padding-top: 3rem;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -797,8 +830,8 @@ header {
     background-position: top left;
   }
 
-  .main-content {
-    margin-top: 17rem;
+  .main-title {
+    margin-top: 10rem;
   }
 
   .feedback {
@@ -810,9 +843,6 @@ header {
       }
     }
   }
-}
-
-@media (max-width: 767px) {
   .feedback-slider-btn {
     &_next {
       right: 0;
@@ -844,6 +874,16 @@ header {
   .main {
     &-title {
       font-size: 3rem;
+    }
+  }
+  .visit{
+    &-header{
+      h1{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
     }
   }
 }
