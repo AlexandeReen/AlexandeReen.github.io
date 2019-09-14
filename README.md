@@ -11,3 +11,5 @@
 [Видеофон](https://alexandereen.github.io/lesson20/ "Верстка видеофона") - ДЗ Видеофон (Урок№20) - практика
 
 [Amazon-K](https://alexandereen.github.io/amazon-k_flexPractice/ "Верстка на Flex") -  Костыли (Практика Flex)
+
+[Eddie's-Car](https://alexandereen.github.io/belaz/ "Верстка на Flex") -  Eddie's-Car (Практика Flexbox/CSS Grid)
