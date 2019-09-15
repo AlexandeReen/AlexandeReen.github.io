@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAIA,AAAA,OAAO,AAAC,CACN,MAAM,CAAE,IAAI,CACZ,SAAS,CAAE,MAAM,CACjB,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,CAIL,AAHnB,AAAD,aAAO,AAAC,CACN,gBAAgB,CATT,OAAO,CASgB,AANlC,AAOE,OAPK,AAOJ,OAAO,CAPV,OAAO,AAOM,MAAM,AAAC,CAChB,OAAO,CAAE,IAAI,CAAG",
-    "sources": [
-        "../sass/components.sass"
-    ],
-    "names": [],
-    "file": "components.min.css"
-}
