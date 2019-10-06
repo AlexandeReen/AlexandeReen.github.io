@@ -155,4 +155,30 @@ html body a {
 .avaible-block button {
   margin: 3rem 0 1rem;
 }
+.advantage {
+  text-align: center;
+  background: #f4f4f4;
+}
+.advantage-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.advantage-block {
+  padding: 2.5rem 4rem;
+  margin-bottom: 8rem;
+  border: 2px solid #ffffff;
+  color: #292929;
+}
+.advantage-block h6 {
+  font-size: 1.5rem;
+}
+.advantage-block p {
+  width: 23rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.advantage-block:hover {
+  background-color: #fff;
+}
 /* Media-Query */
