@@ -14,6 +14,10 @@ html body a {
   text-decoration: none;
   color: #292929;
 }
+html body a,
+html body button {
+  cursor: pointer;
+}
 .container {
   margin: 0 auto;
   width: 60%;
