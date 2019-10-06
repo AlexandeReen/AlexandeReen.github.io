@@ -13,3 +13,5 @@
 [Amazon-K](https://alexandereen.github.io/amazon-k_flexPractice/ "Верстка на Flex") -  Костыли (Практика Flex)
 
 [Eddie's-Car](https://alexandereen.github.io/projects/eddie_s-car "Верстка на Flex") -  Eddie's-Car (Практика Flexbox/CSS Grid)
+
+[Granit](https://alexandereen.github.io/Granit "Верстка на Flex") -  Granit (Практика Flexbox)
