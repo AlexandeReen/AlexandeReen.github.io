@@ -314,4 +314,73 @@ html {
     }
   }
 }
+
+.contact {
+  padding: 8rem 0;
+  background: url(../img/map.png) center no-repeat;
+  background-size: cover;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-block {
+    padding: 6rem 6rem 7rem 6rem;
+    background-color: #fff;
+    width: 22%;
+    color: @text-black;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  &-phones {
+    margin-top: 4rem;
+    a {
+      margin-left: 2.5rem;
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url(../img/contact/1.png) center no-repeat;
+    }
+  }
+  &-adress {
+    margin: 4rem 0 4rem 2.5rem;
+    width: 21rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: -2.5rem;
+      background: url(../img/contact/2.png) center no-repeat;
+    }
+  }
+  &-mail {
+    margin-left: 2.5rem;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-decoration-color: @text-grey;
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: -2.5rem;
+      background: url(../img/contact/3.png) center no-repeat;
+    }
+  }
+}
+
+
+
 /* Media-Query */
