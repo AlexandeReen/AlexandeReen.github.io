@@ -18,6 +18,12 @@ html body a {
   margin: 0 auto;
   width: 60%;
 }
+.container h2 {
+  padding-top: 8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .yellow-btn {
   padding: 2rem 3rem;
   font-size: 1.2rem;
