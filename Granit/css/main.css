@@ -181,4 +181,54 @@ html body a {
 .advantage-block:hover {
   background-color: #fff;
 }
+.product-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.product-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 2px solid #f6f6f6;
+}
+.product-block h6 {
+  text-align: center;
+  width: 18rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #969696;
+}
+.product-block .price {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.product-block .price-old {
+  color: #979797;
+}
+.product-block .discount {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff0000;
+}
+.product-block button {
+  display: block;
+  margin-top: 2.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: none;
+}
+.product .sale::before {
+  content: 'Акция';
+  position: absolute;
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  top: 8%;
+  left: 13%;
+  background-color: red;
+  color: #fff;
+}
 /* Media-Query */
