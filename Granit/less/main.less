@@ -381,6 +381,41 @@ html {
   }
 }
 
-
+footer {
+  padding: 5rem 0;
+  background-color: @text-black;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      img {
+        margin-bottom: 4rem;
+      }
+      p {
+        font-size: 1.2rem;
+        color: @text-white;
+      }
+    }
+    &-phone {
+      text-align: right;
+      color: @text-white;
+      a {
+        color: @text-white;
+        font-size: 1.8rem;
+      }
+      button {
+        margin-top: 3rem;
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: @text-black;
+        border: 2px solid @text-white;
+        color: @text-white;
+        outline: none
+      }
+    }
+  }
+}
 
 /* Media-Query */

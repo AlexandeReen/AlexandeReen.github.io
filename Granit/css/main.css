@@ -322,4 +322,38 @@ html body a {
   margin-left: -2.5rem;
   background: url(../img/contact/3.png) center no-repeat;
 }
+footer {
+  padding: 5rem 0;
+  background-color: #292929;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-logo img {
+  margin-bottom: 4rem;
+}
+footer .footer-logo p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+footer .footer-phone {
+  text-align: right;
+  color: #fff;
+}
+footer .footer-phone a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+footer .footer-phone button {
+  margin-top: 3rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #292929;
+  border: 2px solid #fff;
+  color: #fff;
+  outline: none;
+}
 /* Media-Query */
