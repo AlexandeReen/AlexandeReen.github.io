@@ -5,6 +5,7 @@
 @text-grey: #969696;
 @text-white: #fff;
 @bg-yellow: #ffcc00;
+@bg-grey: #f4f4f4;
 
 /* Базовые настройки */
 html {
@@ -26,7 +27,9 @@ html {
   margin: 0 auto;
   width: 60%;
   h2 {
-    padding-top: 8rem;
+    margin: 0;
+    padding: 8rem 0 6rem;
+    text-align: center;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -92,7 +95,7 @@ html {
 
     /* Menu */
     nav {
-      transform: translateY(-1.8rem);
+      transform: translateY(-3.2rem);
       background: @bg-yellow;
 
       ul {
@@ -114,7 +117,7 @@ html {
     }
   }
   &-content {
-    padding: 11rem 0 14rem;
+    padding: 11rem 0 10rem;
     color: @text-white;
     h1 {
       font-size: 3.6rem;
@@ -143,7 +146,42 @@ html {
   }
 }
 
-
+.avaible {
+  &-blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2.5rem;
+    border: 2px solid #f6f6f6;
+    h6 {
+       margin-bottom: 2rem;
+      font-size: 1.5rem;
+      color: @text-black;
+      border-bottom: 1px solid @text-grey;
+    }
+    p {
+      margin-bottom: 3rem;
+      width: 22rem;
+      line-height: 1.2;
+      text-align: center;
+      font-size: 1.3rem;
+    }
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    button {
+      margin: 3rem 0 1rem;
+    }
+  }
+}
 
 
 /* Media-Query */
