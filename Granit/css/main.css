@@ -231,4 +231,30 @@ html body a {
   background-color: red;
   color: #fff;
 }
+.service {
+  background-color: #f4f4f4;
+  padding-bottom: 8rem;
+}
+.service-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  min-width: 30rem;
+  text-align: center;
+  border: 2px solid #ffffff;
+}
+.service-block h6 {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: #969696;
+}
 /* Media-Query */
