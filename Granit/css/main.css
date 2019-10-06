@@ -1,0 +1,116 @@
+/* Подключение щрифтов */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic');
+/* Переменные */
+/* Базовые настройки */
+html {
+  font-size: 10px;
+  background-color: #fff;
+}
+html body {
+  font-family: 'Ubuntu', sans-serif;
+}
+html body a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #292929;
+}
+.container {
+  margin: 0 auto;
+  width: 60%;
+}
+.yellow-btn {
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #ffcc00;
+  border: none;
+}
+/* Настройки секций */
+.header {
+  padding-bottom: 6rem;
+  z-index: 1;
+}
+.header header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.6rem;
+}
+.header header .logo {
+  flex-grow: 2;
+}
+.header header .header-phone {
+  margin-right: 3rem;
+  text-align: right;
+}
+.header header .header-phone a {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.header header .header-phone p {
+  color: #969696;
+  font-size: 1.1rem;
+  margin: 1rem 0 0 0;
+}
+.header header .header-btn button {
+  padding: 1.5rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #fff;
+  border: 2px solid #292929;
+  outline: none;
+}
+.main {
+  z-index: 3;
+  background: url(../img/bg-main.png) center no-repeat;
+}
+.main .container {
+  /* Menu */
+}
+.main .container nav {
+  transform: translateY(-1.8rem);
+  background: #ffcc00;
+}
+.main .container nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main .container nav ul li {
+  padding: 2.5rem 5rem;
+}
+.main .container nav ul li a {
+  font-size: 1.4rem;
+}
+.main-content {
+  padding: 11rem 0 14rem;
+  color: #fff;
+}
+.main-content h1 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.main-content p {
+  font-size: 1.4rem;
+  width: 22rem;
+  margin-bottom: 6rem;
+}
+.main-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 38rem;
+}
+.main-btn span {
+  font-size: 1.2rem;
+}
+.main-btn span a {
+  margin-left: 1rem;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* Media-Query */

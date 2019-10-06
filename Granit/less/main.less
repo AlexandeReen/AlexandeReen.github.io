@@ -1,0 +1,143 @@
+/* Подключение щрифтов */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic');
+/* Переменные */
+@text-black: #292929;
+@text-grey: #969696;
+@text-white: #fff;
+@bg-yellow: #ffcc00;
+
+/* Базовые настройки */
+html {
+  font-size: 10px;
+  background-color: #fff;
+
+  body {
+    font-family: 'Ubuntu', sans-serif;
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: @text-black;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+}
+.yellow-btn {
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: @bg-yellow;
+  border: none;
+}
+
+/* Настройки секций */
+.header {
+  padding-bottom: 6rem;
+  z-index: 1;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.6rem;
+
+    .logo {
+      flex-grow: 2;
+    }
+
+    .header-phone {
+      margin-right: 3rem;
+      text-align: right;
+
+      a {
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+
+      p {
+        color: @text-grey;
+        font-size: 1.1rem;
+        margin: 1rem 0 0 0;
+      }
+    }
+
+    .header-btn {
+      button {
+        padding: 1.5rem 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: #fff;
+        border: 2px solid @text-black;
+        outline: none;
+      }
+    }
+  }
+}
+
+.main {
+  z-index: 3;
+  background: url(../img/bg-main.png) center no-repeat;
+
+  .container {
+
+    /* Menu */
+    nav {
+      transform: translateY(-1.8rem);
+      background: @bg-yellow;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          padding: 2.5rem 5rem;
+
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  &-content {
+    padding: 11rem 0 14rem;
+    color: @text-white;
+    h1 {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      margin-bottom: 4rem;
+    }
+    p {
+      font-size: 1.4rem;
+      width: 22rem;
+      margin-bottom: 6rem;
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38rem;
+    span {
+      font-size: 1.2rem;
+      a {
+        margin-left: 1rem;
+        color: @text-white;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+      }
+    }
+  }
+}
+
+
+
+
+/* Media-Query */
